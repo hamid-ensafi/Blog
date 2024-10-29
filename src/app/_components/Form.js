@@ -2,12 +2,7 @@
 
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
-import { login } from "./../_lib/auth";
-import { Metadata } from 'next';
-
-export const metadata = {
-  title: 'Login ',
-};
+import { login } from "../_lib/authApi";
 
 export default function Login() {
   const [username, setUsername] = useState("");

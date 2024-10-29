@@ -1,5 +1,5 @@
+import BlogItem from "../_components/Blog";
+
 export default function Blog() {
-    return (
-        <h1>blog page</h1>
-    )
+    return (<BlogItem></BlogItem>)
 }

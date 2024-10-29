@@ -1,0 +1,80 @@
+Headers {
+  [Symbol(headers list)]: HeadersList {
+  cookies: null,
+  [Symbol(headers map)]: Map(21) {
+  'accept' => {
+  name: 'accept',
+  value: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+},
+  'accept-encoding' => { name: 'accept-encoding', value: 'gzip, deflate, br, zstd' },
+  'accept-language' => {
+  name: 'accept-language',
+  value: 'fa,fa-IR;q=0.9,en-US;q=0.8,en;q=0.7'
+},
+  'cache-control' => { name: 'cache-control', value: 'max-age=0' },
+  'connection' => { name: 'connection', value: 'keep-alive' },
+  'cookie' => { name: 'cookie', value: 'token=TestToken' },
+  'host' => { name: 'host', value: 'localhost:3000' },
+  'referer' => { name: 'referer', value: 'http://localhost:3000/blog' },
+  'sec-ch-ua' => {
+  name: 'sec-ch-ua',
+  value: '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"'
+},
+  'sec-ch-ua-mobile' => { name: 'sec-ch-ua-mobile', value: '?0' },
+  'sec-ch-ua-platform' => { name: 'sec-ch-ua-platform', value: '"Windows"' },
+  'sec-fetch-dest' => { name: 'sec-fetch-dest', value: 'document' },
+  'sec-fetch-mode' => { name: 'sec-fetch-mode', value: 'navigate' },
+  'sec-fetch-site' => { name: 'sec-fetch-site', value: 'same-origin' },
+  'sec-fetch-user' => { name: 'sec-fetch-user', value: '?1' },
+  'upgrade-insecure-requests' => { name: 'upgrade-insecure-requests', value: '1' },
+  'user-agent' => {
+  name: 'user-agent',
+  value: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
+},
+  'x-forwarded-for' => { name: 'x-forwarded-for', value: '::1' },
+  'x-forwarded-host' => { name: 'x-forwarded-host', value: 'localhost:3000' },
+  'x-forwarded-port' => { name: 'x-forwarded-port', value: '3000' },
+  'x-forwarded-proto' => { name: 'x-forwarded-proto', value: 'http' }
+},
+  [Symbol(headers map sorted)]: [
+  [
+  'accept',
+  'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+],
+  [ 'accept-encoding', 'gzip, deflate, br, zstd' ],
+  [ 'accept-language', 'fa,fa-IR;q=0.9,en-US;q=0.8,en;q=0.7' ],
+  [ 'cache-control', 'max-age=0' ],
+  [ 'connection', 'keep-alive' ],
+  [ 'cookie', 'token=TestToken' ],
+  [ 'host', 'localhost:3000' ],
+  [ 'referer', 'http://localhost:3000/blog' ],
+  [
+  'sec-ch-ua',
+  '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"'
+],
+  [ 'sec-ch-ua-mobile', '?0' ],
+  [ 'sec-ch-ua-platform', '"Windows"' ],
+  [ 'sec-fetch-dest', 'document' ],
+  [ 'sec-fetch-mode', 'navigate' ],
+  [ 'sec-fetch-site', 'same-origin' ],
+  [ 'sec-fetch-user', '?1' ],
+  [ 'upgrade-insecure-requests', '1' ],
+  [
+  'user-agent',
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
+],
+  [ 'x-forwarded-for', '::1' ],
+  [ 'x-forwarded-host', 'localhost:3000' ],
+  [ 'x-forwarded-port', '3000' ],
+  [ 'x-forwarded-proto', 'http' ]
+]
+},
+  [Symbol(guard)]: 'request',
+  [Symbol(realm)]: {
+  settingsObject: {
+  baseUrl: undefined,
+  origin: [Getter],
+  policyContainer: { referrerPolicy: 'strict-origin-when-cross-origin' }
+}
+}
+}

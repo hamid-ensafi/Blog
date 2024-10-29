@@ -19,3 +19,6 @@ export async function POST(request) {
     );
   }
 }
+export function isValidToken(token) {
+  return token === "TestToken"; 
+}
