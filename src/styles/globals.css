@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'nazanin';
+    src: url('../fonts/nazanin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@layer base{
+    body{
+       @apply font-nazanin
+    }
+    input{
+        @apply outline-none ;
+    }
+}

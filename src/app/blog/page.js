@@ -1,5 +1,9 @@
-import BlogItem from "../_components/Blog";
+import BlogItem from "../../components/Blog";
 
-export default function Blog() {
-    return (<BlogItem></BlogItem>)
+
+export const metadata = {
+    title:'پست ',
+  }
+export default function Posts() {
+  return <BlogItem></BlogItem>;
 }

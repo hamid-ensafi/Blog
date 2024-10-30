@@ -1,22 +1,11 @@
 "use client";
 
-import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
-import { login } from "../_lib/authApi";
-
+import { useLogin} from '@/hooks/useLogin'
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
-  const { mutate: loginMutate } = useMutation({
-    mutationFn: ({ username, password }) => login(username, password),
-    onSuccess: () => {
-      window.location.href = "/blog";
-    },
-    onError: (error) => {
-      console.error("An error occurred:", error);
-    },
-  });
+  const { loginMutate } = useLogin()
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -26,7 +15,7 @@ export default function Login() {
   return (
     <form className="w-2/12 flex flex-col gap-2" onSubmit={handleLogin}>
       <div className="flex flex-col">
-        <label className="p-2 text-slate-200">User Name</label>
+        <label className="p-2 text-slate-200">نام کاربری</label>
         <input
           className="rounded px-2 py-1"
           placeholder="username@example.com"
@@ -36,7 +25,7 @@ export default function Login() {
         />
       </div>
       <div className="flex flex-col">
-        <label className="p-2 text-slate-200">Password</label>
+        <label className="p-2 text-slate-200">رمز عبور </label>
         <input
           className="rounded px-2 py-1"
           placeholder="Password"

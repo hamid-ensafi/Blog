@@ -1,20 +1,19 @@
 import { NextResponse } from "next/server";
-
-export function middleware(req) {
+export async function middleware(req) {
   const token = req.cookies.get("token");
   const { pathname } = req.nextUrl;
-
-  if (pathname === "/login" && token?.value) {
+  
+  if (pathname === "/" && token?.value) {
     return NextResponse.redirect(new URL("/blog", req.url));
   }
 
-  if (!token?.value && pathname !== "/login") {
-    return NextResponse.redirect(new URL("/login", req.url));
+  if (!token?.value && pathname !== "/") {
+    return NextResponse.redirect(new URL("/", req.url));
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/login", "/blog"], 
+  matcher: ["/", "/blog"], 
 };

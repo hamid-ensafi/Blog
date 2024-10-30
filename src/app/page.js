@@ -1,7 +1,9 @@
+import Form from "../components/Form";
 
-
-export default function Home() {
+export default function Login() {
   return (
-    <h1>hamid</h1>
-  )
- }
+    <section className="flex justify-center w-full h-full items-center">
+      <Form></Form>
+    </section>
+  );
+}
